@@ -1,0 +1,17 @@
+[project]
+name = "Activity_Simulator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "keyboard>=0.13.5",
+    "pyautogui>=0.9.54",
+    "pynput>=1.8.1",
+    "pyobjc>=11.0 ; sys_platform == 'darwin'",
+    "pyobjc-core>=11.0 ; sys_platform == 'darwin'",
+    "python3-xlib>=0.15 ; sys_platform == 'linux'",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]  # Explicitely tells pytest which directory to add to the PYTHONPATH var, to make avaiable imports beyond `tests` dir
